@@ -22,7 +22,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5"
+    "target": "es5",
+    "types": [
+      "cypress"
+    ]
   },
   "exclude": [
     "node_modules"
