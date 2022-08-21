@@ -36,4 +36,8 @@ yarn-error.log*
 next-env.d.ts
 
 # WebStorm
-/.idea
+/.idea/
+
+# Cypress
+/cypress/screenshots/
+/cypress/videos/
