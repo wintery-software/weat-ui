@@ -1,0 +1,42 @@
+{
+  "name": "weat-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "test:unit": "jest",
+    "test:e2e": "cypress run",
+    "ci:unit": "jest",
+    "ci:e2e": "next build && start-server-and-test start http://localhost:3000 test:e2e"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.0",
+    "next": "12.2.5",
+    "normalize.css": "^8.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.54.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@types/bootstrap": "^5.2.2",
+    "@types/node": "18.7.7",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "cypress": "^10.6.0",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "prettier": "^2.7.1",
+    "start-server-and-test": "^1.14.0",
+    "typescript": "4.7.4"
+  }
+}
