@@ -1,0 +1,20 @@
+@import "~normalize.css";
+@import "~bootstrap/scss/bootstrap";
+
+
+.h-100-webkit {
+  height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  // noinspection CssInvalidPropertyValue
+  .h-100-webkit {
+    height: -webkit-fill-available;
+  }
+}
+
+.restaurant-name {
+  @extend .fs-1;
+  // Prevent "今天吃" from moving upwards
+  white-space: pre;
+}
