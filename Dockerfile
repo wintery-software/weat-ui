@@ -19,5 +19,5 @@ COPY --from=builder /web/next.config.js ./
 COPY --from=builder /web/node_modules ./node_modules
 COPY --from=builder /web/package.json ./package.json
 COPY --from=builder /web/public ./public
-EXPOSE 3001
+EXPOSE 3000
 CMD ["yarn", "start"]
