@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "cypress": "cypress open",
-    "test:unit": "jest",
+    "test:unit": "jest --verbose",
     "test:e2e": "cypress run",
     "ci:unit": "jest",
     "ci:e2e": "next build && start-server-and-test start http://localhost:3000 test:e2e"
