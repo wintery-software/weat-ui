@@ -7,7 +7,7 @@
 }
 
 @supports (-webkit-touch-callout: none) {
-  //noinspection CssInvalidPropertyValue
+  // noinspection CssInvalidPropertyValue
   .h-100-webkit {
     height: -webkit-fill-available;
   }

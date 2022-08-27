@@ -1,18 +1,20 @@
 import type { NextPage } from 'next';
 import Container from '../components/Container';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Restaurant } from '../@types/restaurant';
 
 const Home: NextPage = () => {
   const [restaurant, setRestaurant] = useState<Restaurant>({ name: ' ' });
 
-  // fetch('https://api.weat.io/lucky')
-  //   .then((res) => res.json())
-  //   .then((data) => setRestaurant(data));
+  useEffect(() => {
+    fetchRestaurantByLuck()
+  }, [])
 
-  setTimeout(() => {
-    setRestaurant({ name: '不二家酸菜鱼' });
-  }, 1000);
+  const fetchRestaurantByLuck = () => {
+    fetch(`${process.env.NEXT_PUBLIC_WEAT_API_URL}/lucky`)
+      .then((res) => res.json())
+      .then((data) => setRestaurant(data));
+  }
 
   return (
     <Container size="fluid">
